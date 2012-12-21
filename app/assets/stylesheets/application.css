@@ -154,6 +154,8 @@ body {
     width: 176px;
     height: 101px;
     background: #e8edef;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .hex .bottom {
     width: 0;
@@ -172,6 +174,157 @@ body {
     margin-left: -97px;
 }
 
+#python {
+    background-image: url('icons/python.png');
+}
+
+#python:hover {
+    background-image: url('icons/python-color.png');
+}
+
+#rails {
+    background-image: url('icons/rails.png');
+}
+
+#rails:hover {
+    background-image: url('icons/rails-color.png');
+}
+
+#django {
+    background-image: url('icons/django.png');
+}
+
+#django:hover {
+    background-image: url('icons/django-color.png');
+}
+
+#ruby {
+    background-image: url('icons/ruby.png');
+}
+
+#ruby:hover {
+    background-image: url('icons/ruby-color.png');
+}
+
+#mongo {
+    background-image: url('icons/mongo.png');
+}
+
+#mongo:hover {
+    background-image: url('icons/mongo-color.png');
+}
+
+#compass{
+    background-image: url('icons/compass.png');
+}
+
+#compass:hover {
+    background-image: url('icons/compass-color.png');
+}
+
+#jquery {
+    background-image: url('icons/jquery.png');
+}
+
+#jquery:hover {
+    background-image: url('icons/jquery-color.png');
+}
+
+#javascript {
+    background-image: url('icons/javascript.png');
+}
+
+#javascript:hover {
+    background-image: url('icons/javascript-color.png');
+}
+
+#backbone {
+    background-image: url('icons/backbone.png');
+}
+
+#backbone:hover {
+    background-image: url('icons/backbone-color.png');
+}
+
+#html5 {
+    background-image: url('icons/html5.png');
+}
+
+#html5:hover {
+    background-image: url('icons/html5-color.png');
+}
+
+#sinatra {
+    background-image: url('icons/sinatra.png');
+}
+
+#sinatra:hover {
+    background-image: url('icons/sinatra-color.png');
+}
+
+#php {
+    background-image: url('icons/php.png');
+}
+
+#php:hover {
+    background-image: url('icons/php-color.png');
+}
+
+#ember {
+    background-image: url('icons/ember.png');
+}
+
+#ember:hover {
+    background-image: url('icons/ember-color.png');
+}
+
+#go {
+    background-image: url('icons/go.png');
+}
+
+#go:hover {
+    background-image: url('icons/go-color.png');
+}
+
+#node {
+    background-image: url('icons/node.png');
+}
+
+#node:hover {
+    background-image: url('icons/node-color.png');
+}
+
+#handlebars {
+    background-image: url('icons/handlebars.png');
+}
+
+#handlebars:hover {
+    background-image: url('icons/handlebars-color.png');
+}
+
+#postgres {
+    background-image: url('icons/postgres.png');
+}
+
+#postgres:hover {
+    background-image: url('icons/postgres-color.png');
+}
+
+#git {
+    background-image: url('icons/git.png');
+}
+
+#git:hover {
+    background-image: url('icons/git-color.png');
+}
+
+#redis {
+    background-image: url('icons/redis.png');
+}
+
+#redis:hover {
+    background-image: url('icons/redis-color.png');
+}
 /**
  * Form
  */
@@ -203,11 +356,19 @@ body {
  	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     margin: 0 auto;
+    width: 100%;
+    display: inline;
     text-align: center;
+    margin-left: 50px;
+
  }
 
  #email-container h2 {
 
+ }
+
+ #email-container form {
+    display: inline;
  }
 
  .email-form {
