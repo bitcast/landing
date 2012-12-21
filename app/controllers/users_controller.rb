@@ -11,7 +11,7 @@ class UsersController < ApplicationController
       redirect_to '/success'
     else 
       flash[:error] = "Sorry, your email could not be added."
-      render 'new'
+      redirect_to :back
     end
   end
   
