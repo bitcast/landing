@@ -121,6 +121,7 @@ body {
  	color: #818181;
  	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
+    font-size: 15px;
  }
 
  #main a:hover {
@@ -135,7 +136,7 @@ body {
  	position: relative;
  	width: 100%;
  	overflow: hidden;
- 	height: 575px;
+ 	height: 565px;
 }
 
 .hex {
@@ -463,4 +464,84 @@ body {
     background: #2a8ac4;
 }
 
+#one-liner {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #b6babb;
+    text-align: center;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    color: #7E7975;
+    padding: 10px;
+}
+
+#container {
+    width: 100%;
+    border-top: 1px solid #b6babb;
+    padding-top: 20px;
+    background: #fff;
+}
+
+#nine-sixty-box-container {
+    width: 960px;
+    position: relative;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 5px;
+    min-height: 300px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.column:first-child {
+    margin-left: 0px;
+}
+
+.column .box {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #b6babb;
+    background: #f5f9fa;
+    min-height: 200px;
+    margin-bottom: 15px;
+    background-image: url('box-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box#first-box {
+    background-image: url('video.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box#second-box {
+    background-image: url('yehuda.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box-header {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    color: #686563;
+    font-size: 19px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+.box-info {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    padding-left: 5px;
+    color: #82807f;
+    line-height: 21px;
+}
 
