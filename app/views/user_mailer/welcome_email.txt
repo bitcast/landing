@@ -1,12 +1,8 @@
-Welcome to Backpack
+Thank you for signing up for a Backpack.io invitation!
 ===================
 
-You have successfully signed up with Backpack.io.
+We'll send you an email at <%= user.email %> as soon as we're up and running. Until then, please follow us on Twitter (@backpackdotio) or feel free to shoot us a message at info@backpack.io. 
 
-We will send an invitation to <%= @user.email %> when the site is ready.
-
-Thanks for joining and have a great day!
-
-Sincerely,
+Cheers,
 
 Zach, Nikhil, Max, and Luke
