@@ -157,31 +157,34 @@
 	</div>
 
 	<div id="email-container" class="email-form">
-		<h1>A marketplace for web development tutorials.</h1>
+		<h1>Changing the way you learn how to code.</h1>
 		<!-- <h2>Backpack.io</h2> -->
 		<%= form_for @user , html: { class: "email-form" }, remote: true do |f| %>
 		  <%= f.text_field :email, :placeholder => "Enter your email" %>
-		  <%= f.submit "Submit" %>
+		  <%= f.submit "Request Invite" %>
 		<% end %>
 	</div>
 </div>
 
 <div id="container">
 	<div id="nine-sixty-box-container">
+		<p class="oneliner">A marketplace for web development tutorials.</p><br>
+	</div>
+	<div id="nine-sixty-box-container">
 		<div class="column" id="first">
 			<div class="box" id="first-box"></div>
 			<p class="box-header">Learn from the best.</p>
-			<p class="box-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.</p>
+			<p class="box-info">Watch videos featuring the developers you already know and love. Our ever-growing library of screencasts covers the latest technologies and features hackers, designers, and startup gurus from your favorite companies.</p>
 		</div>
 		<div class="column" id="second">
 			<div class="box" id="second-box"></div>
 			<p class="box-header">Follow your favorites.</p>
-			<p class="box-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type..</p>
+			<p class="box-info">Backpack lets you follow your favorite developers so you'll be the first to know when they publish new videos. In addition, you can follow tags to stay on the cutting edge of all your most used technologies.</p>
 		</div>
 		<div class="column" id="third">
 			<div class="box" id="third-box"></div>
 			<p class="box-header">Sell your own videos.</p>
-			<p class="box-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.</p>
+			<p class="box-info">We believe that sharing your expertise should be easy. Upload your first free or paid video within minutes and manage all of your analytics with our secure Dashboard. Video ratings and reviews allow for a premium customer experience.</p>
 		</div>
 	</div>
 </div>
