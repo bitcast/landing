@@ -159,7 +159,7 @@
 	<div id="email-container" class="email-form">
 		<h1>A marketplace for web development tutorials.</h1>
 		<!-- <h2>Backpack.io</h2> -->
-		<%= form_for @user , :html => { :class => "email-form" } do |f| %>
+		<%= form_for @user , html: { class: "email-form" }, remote: true do |f| %>
 		  <%= f.text_field :email, :placeholder => "Enter your email" %>
 		  <%= f.submit "Submit" %>
 		<% end %>
@@ -185,3 +185,4 @@
 		</div>
 	</div>
 </div>
+

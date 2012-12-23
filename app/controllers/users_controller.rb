@@ -8,10 +8,9 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       UserMailer.welcome_email(@user).deliver
-      redirect_to '/success'
-    else 
-      flash[:error] = "Sorry, your email could not be added."
-      redirect_to :back
+      render json: @user, only: :email
+    else
+      render json: @user.errors, status: :unprocessable_entity
     end
   end
   
