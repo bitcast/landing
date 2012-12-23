@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  caches_page :new
 
   def new
     @user = User.new
@@ -18,3 +19,4 @@ class UsersController < ApplicationController
     @users = User.all 
   end
 end
+
