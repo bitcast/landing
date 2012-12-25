@@ -652,7 +652,7 @@ body {
     position: relative;
     cursor: default;
     box-shadow: 
-        inset 0 0 0 16px rgba(255,255,255,0.6),
+        inset 0 0 0 8px rgba(255,255,255,0.6),
         0 1px 2px rgba(0,0,0,0.1);
         
     -webkit-transition: all 0.3s ease-in-out;
@@ -671,7 +671,8 @@ body {
 }
 
 #third-photo {
-    background-image: url('walter.jpeg');
+    background-image: url('nikhil.jpeg');
+    background-size: 102%;
 }
 
 #fourth-photo {
