@@ -470,7 +470,17 @@ body {
     font-size: 14px;
     position: relative;
     top: -100px;
-    margin-left: 21px;
+    margin-left: 11px;
+ }
+
+  .email-failure-message {
+    color: red;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    position: relative;
+    top: -115px;
+    margin-left: 5px;
  }
 
  .email-failure {
