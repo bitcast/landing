@@ -718,26 +718,44 @@ body {
     transition: all 1s ease-in-out 0.2s;
 }
 
+.member-social {
+    margin-left: 35px;
+    margin-top: -5px;
+}
+
 .member-info a {
     display: inline-block;
-    padding-left: 5px;
     color: #7A7A7A;
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
+    text-decoration: none;
     font-size: 9px;
     letter-spacing: 1px;
-    padding-top: 4px;
     font-family: 'Open Sans', Arial, sans-serif;
+    width: 35px;
+    height: 35px;
+    background-image: url('social.png');
 }
 
-.member-info a:first-of-type {
-    padding-left: 24px;
+.blog{
+    background-position: -670px -208px;
 }
 
-.member-info p a:hover {
-    color: #7A7A7A;
-    color: rgba(255,242,34, 0.8);
+.twitter{
+    background-position: -409px -260px;
+}
+
+.linkedin{
+    background-position: -410px -52px;
+}
+
+.github{
+    background-position: -97px -260px;
+}
+
+.dribbble{
+    background-position: -356px -104px;
 }
 
 .team-photo:hover {
@@ -887,3 +905,4 @@ body {
     text-align: center;
     font-size: 25px;
 }
+

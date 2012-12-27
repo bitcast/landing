@@ -3,15 +3,24 @@ $(function(){
 		//alert("success");
 		$('#user_email').css({border: '1px solid green'});
 		$('#user_email').remove();
-		$('input[name="commit"]').remove();
+		$('input:submit').remove();
 		$('.email-failure-message').text('');
 		$('.email-form form').append('<p class="email-success-message">You are awesome. Scroll down to read more about Backpack.');
 	})
 	.bind('ajax:error', function(xhr, status, error){
 		//alert("error");
+		$('input:submit').removeAttr('disabled');
+		$('input:submit').attr('value','Request Invite');
 		$('#email-container').effect("shake", { times:3, distance:20 }, 500);
 		$('#user_email').css({border: '1px solid red'}).focus();
 		$('.email-failure-message').text('Sorry, that email has already been registered or is invalid.');
+	});
+	$('input:submit').bind('click', function(){
+		setTimeout(function(){
+			$('input:submit').attr('value','Submitting...');
+			$('input:submit').attr('disabled', true);
+			$('.email-failure-message').text('');
+		}, 10);
 	});
 
 }); 
