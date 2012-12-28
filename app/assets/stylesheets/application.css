@@ -480,6 +480,10 @@ body {
         inset 0 20px 40px rgba(255,255,255,0.15);
 }
 
+.email-form input[type=submit]:disabled {
+    background: #333 !important;
+}
+
 .no-boxshadow .email-form input[type=submit]:hover {
     background: #2a8ac4;
 }
