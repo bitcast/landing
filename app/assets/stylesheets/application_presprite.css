@@ -18,10 +18,12 @@
        Execute 'spritemapper application.css' from within the stylsheets directory
        to generate the sprite icons image 
 
+       Run a grep or egrap to find and replace all '../images/icons' with 'icons' in application.css ONLY
+
  spritemapper.sprite_dirs = ../images/
  spritemapper.anneal_steps = 4500
  spritemapper.output_css = application.css 
- spritemapper.output_image = icons/icons_sprites.png
+ spritemapper.output_image = ../images/icons/icons_sprites.png
  
 */
 
@@ -98,7 +100,7 @@ body {
 
  #multicolor {
  	height: 2px;
- 	background:  url('multicolor.png');
+ 	background: url('multicolor.png');
  	background-repeat: repeat-x;
  	width: 100%;
  }
@@ -108,7 +110,7 @@ body {
  	display: block;
  	height: 50px;
  	width: 150px; /**100px with other logo **/
- 	background:  url('backpacklogo.png');
+ 	background: url('backpacklogo.png');
  	background-repeat: no-repeat;
  	background-position: center;
  }
@@ -201,179 +203,179 @@ body {
 }
 
 .python {
-    background: url('icons/icons_sprites.png') no-repeat -896px 0;
+    background: url('../images/icons/python.png');
 }
 
 .python:hover {
-    background: url('icons/icons_sprites.png') no-repeat -1064px 0;
+    background: url('../images/icons/python-color.png');
 }
 
 .rails {
-    background: url('icons/icons_sprites.png') no-repeat -952px 0;
+    background: url('../images/icons/rails.png');
 }
 
 .rails:hover {
-    background: url('icons/icons_sprites.png') no-repeat -336px 0;
+    background: url('../images/icons/rails-color.png');
 }
 
 .django {
-    background: url('icons/icons_sprites.png') no-repeat -448px -56px;
+    background: url('../images/icons/django.png');
 }
 
 .django:hover {
-    background: url('icons/icons_sprites.png') no-repeat -560px -56px;
+    background: url('../images/icons/django-color.png');
 }
 
 .ruby {
-    background: url('icons/icons_sprites.png') no-repeat -224px 0;
+    background: url('../images/icons/ruby.png');
 }
 
 .ruby:hover {
-    background: url('icons/icons_sprites.png') no-repeat -1008px -56px;
+    background: url('../images/icons/ruby-color.png');
 }
 
 .mongo {
-    background: url('icons/icons_sprites.png') no-repeat -168px -56px;
+    background: url('../images/icons/mongo.png');
 }
 
 .mongo:hover {
-    background: url('icons/icons_sprites.png') no-repeat -1120px -56px;
+    background: url('../images/icons/mongo-color.png');
 }
 
 .compass{
-    background: url('icons/icons_sprites.png') no-repeat -56px -56px;
+    background: url('../images/icons/compass.png');
 }
 
 .compass:hover {
-    background: url('icons/icons_sprites.png') no-repeat -392px 0;
+    background: url('../images/icons/compass-color.png');
 }
 
 .jquery {
-    background: url('icons/icons_sprites.png') no-repeat -952px -56px;
+    background: url('../images/icons/jquery.png');
 }
 
 .jquery:hover {
-    background: url('icons/icons_sprites.png') no-repeat -784px 0;
+    background: url('../images/icons/jquery-color.png');
 }
 
 .javascript {
-    background: url('icons/icons_sprites.png') no-repeat -112px -56px;
+    background: url('../images/icons/javascript.png');
 }
 
 .javascript:hover {
-    background: url('icons/icons_sprites.png') no-repeat 0 -56px;
+    background: url('../images/icons/javascript-color.png');
 }
 
 .backbone {
-    background: url('icons/icons_sprites.png') no-repeat -840px 0;
+    background: url('../images/icons/backbone.png');
 }
 
 .backbone:hover {
-    background: url('icons/icons_sprites.png') no-repeat -896px -56px;
+    background: url('../images/icons/backbone-color.png');
 }
 
 .html5 {
-    background: url('icons/icons_sprites.png') no-repeat -728px 0;
+    background: url('../images/icons/html5.png');
 }
 
 .html5:hover {
-    background: url('icons/icons_sprites.png') no-repeat -1288px -56px;
+    background: url('../images/icons/html5-color.png');
 }
 
 .sinatra {
-    background: url('icons/icons_sprites.png') no-repeat -616px -56px;
+    background: url('../images/icons/sinatra.png');
 }
 
 .sinatra:hover {
-    background: url('icons/icons_sprites.png') no-repeat -448px 0;
+    background: url('../images/icons/sinatra-color.png');
 }
 
 .php {
-    background: url('icons/icons_sprites.png') no-repeat -672px -56px;
+    background: url('../images/icons/php.png');
 }
 
 .php:hover {
-    background: url('icons/icons_sprites.png') no-repeat -840px -56px;
+    background: url('../images/icons/php-color.png');
 }
 
 .ember {
-    background: url('icons/icons_sprites.png') no-repeat -1232px -56px;
+    background: url('../images/icons/ember.png');
 }
 
 .ember:hover {
-    background: url('icons/icons_sprites.png') no-repeat -1176px -56px;
+    background: url('../images/icons/ember-color.png');
 }
 
 .go {
-    background: url('icons/icons_sprites.png') no-repeat -280px -56px;
+    background: url('../images/icons/go.png');
 }
 
 .go:hover {
-    background: url('icons/icons_sprites.png') no-repeat -280px 0;
+    background: url('../images/icons/go-color.png');
 }
 
 .node {
-    background: url('icons/icons_sprites.png') no-repeat -728px -56px;
+    background: url('../images/icons/node.png');
 }
 
 .node:hover {
-    background: url('icons/icons_sprites.png') no-repeat -560px 0;
+    background: url('../images/icons/node-color.png');
 }
 
 .handlebars {
-    background: url('icons/icons_sprites.png') no-repeat -336px -56px;
+    background: url('../images/icons/handlebars.png');
 }
 
 .handlebars:hover {
-    background: url('icons/icons_sprites.png') no-repeat -112px 0;
+    background: url('../images/icons/handlebars-color.png');
 }
 
 .postgres {
-    background: url('icons/icons_sprites.png') no-repeat -56px 0;
+    background: url('../images/icons/postgres.png');
 }
 
 .postgres:hover {
-    background: url('icons/icons_sprites.png') no-repeat -224px -56px;
+    background: url('../images/icons/postgres-color.png');
 }
 
 .git {
-    background: url('icons/icons_sprites.png') no-repeat -672px 0;
+    background: url('../images/icons/git.png');
 }
 
 .git:hover {
-    background: url('icons/icons_sprites.png') no-repeat -616px 0;
+    background: url('../images/icons/git-color.png');
 }
 
 .redis {
-    background: url('icons/icons_sprites.png') no-repeat -784px -56px;
+    background: url('../images/icons/redis.png');
 }
 
 .redis:hover {
-    background: url('icons/icons_sprites.png') no-repeat -1064px -56px;
+    background: url('../images/icons/redis-color.png');
 }
 
 .angular {
-    background: url('icons/icons_sprites.png') no-repeat -1008px 0;
+    background: url('../images/icons/angular.png');
 }
 
 .angular:hover {
-    background: url('icons/icons_sprites.png') no-repeat -168px 0;
+    background: url('../images/icons/angular-color.png');
 }
 
 .clojure {
-    background: url('icons/icons_sprites.png') no-repeat 0 0;
+    background: url('../images/icons/clojure.png');
 }
 
 .clojure:hover {
-    background: url('icons/icons_sprites.png') no-repeat -392px -56px;
+    background: url('../images/icons/clojure-color.png');
 }
 
 .modernizr {
-    background: url('icons/icons_sprites.png') no-repeat -504px 0;
+    background: url('../images/icons/modernizr.png');
 }
 
 .modernizr:hover {
-    background: url('icons/icons_sprites.png') no-repeat -504px -56px;
+    background: url('../images/icons/modernizr-color.png');
 }
 /**
  * Form
@@ -566,19 +568,19 @@ body {
     background: #f5f9fa;
     min-height: 200px;
     margin-bottom: 15px;
-    background:  url('box-1.png');
+    background: url('box-1.png');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .box#first-box {
-    background:  url('video.png');
+    background: url('video.png');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .box#second-box {
-    background:  url('yehuda.png');
+    background: url('yehuda.png');
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -675,19 +677,19 @@ body {
 }
 
 #first-photo {
-    background:  url('max.jpeg');
+    background: url('max.jpeg');
 }
 
 #second-photo {
-    background:  url('zach.jpeg');
+    background: url('zach.jpeg');
 }
 
 #third-photo {
-    background:  url('nikhil.jpeg');
+    background: url('nikhil.jpeg');
 }
 
 #fourth-photo {
-    background:  url('luke.jpeg');
+    background: url('luke.jpeg');
 }
 
 .member-info {
@@ -760,7 +762,7 @@ body {
     font-family: 'Open Sans', Arial, sans-serif;
     width: 35px;
     height: 35px;
-    background:  url('social.png');
+    background: url('social.png');
 }
 
 .blog{
@@ -863,27 +865,27 @@ body {
 }
 
 #feature-icon-one {
-    background: url('icons/icons_sprites.png') no-repeat -1153px 0;
+    background: url('../images/icons/infinity.png');
 }
 
 #feature-icon-two {
-    background: url('icons/icons_sprites.png') no-repeat -1120px 0;
+    background: url('../images/icons/play.png');
 }
 
 #feature-icon-three {
-    background: url('icons/icons_sprites.png') no-repeat -1186px 0;   
+    background: url('../images/icons/video.png');   
 }
 
 #feature-icon-four {
-    background: url('icons/icons_sprites.png') no-repeat -1285px 0;
+    background: url('../images/icons/cloud.png');
 }
 
 #feature-icon-five {
-    background: url('icons/icons_sprites.png') no-repeat -1219px 0;
+    background: url('../images/icons/notes.png');
 }
 
 #feature-icon-six {
-    background: url('icons/icons_sprites.png') no-repeat -1252px 0;
+    background: url('../images/icons/credit-card.png');
 }
 
 
