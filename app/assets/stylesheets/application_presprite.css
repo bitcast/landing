@@ -206,7 +206,7 @@ body {
     background: url('../images/icons/python.png');
 }
 
-.python:hover {
+.hex:hover .middle .python {
     background: url('../images/icons/python-color.png');
 }
 
@@ -214,7 +214,7 @@ body {
     background: url('../images/icons/rails.png');
 }
 
-.rails:hover {
+.hex:hover .middle .rails {
     background: url('../images/icons/rails-color.png');
 }
 
@@ -222,7 +222,7 @@ body {
     background: url('../images/icons/django.png');
 }
 
-.django:hover {
+.hex:hover .middle .django {
     background: url('../images/icons/django-color.png');
 }
 
@@ -230,7 +230,7 @@ body {
     background: url('../images/icons/ruby.png');
 }
 
-.ruby:hover {
+.hex:hover .middle .ruby {
     background: url('../images/icons/ruby-color.png');
 }
 
@@ -238,7 +238,7 @@ body {
     background: url('../images/icons/mongo.png');
 }
 
-.mongo:hover {
+.hex:hover .middle .mongo {
     background: url('../images/icons/mongo-color.png');
 }
 
@@ -246,7 +246,7 @@ body {
     background: url('../images/icons/compass.png');
 }
 
-.compass:hover {
+.hex:hover .middle .compass {
     background: url('../images/icons/compass-color.png');
 }
 
@@ -254,7 +254,7 @@ body {
     background: url('../images/icons/jquery.png');
 }
 
-.jquery:hover {
+.hex:hover .middle .jquery {
     background: url('../images/icons/jquery-color.png');
 }
 
@@ -262,7 +262,7 @@ body {
     background: url('../images/icons/javascript.png');
 }
 
-.javascript:hover {
+.hex:hover .middle .javascript {
     background: url('../images/icons/javascript-color.png');
 }
 
@@ -270,7 +270,7 @@ body {
     background: url('../images/icons/backbone.png');
 }
 
-.backbone:hover {
+.hex:hover .middle .backbone {
     background: url('../images/icons/backbone-color.png');
 }
 
@@ -278,7 +278,7 @@ body {
     background: url('../images/icons/html5.png');
 }
 
-.html5:hover {
+.hex:hover .middle .html5 {
     background: url('../images/icons/html5-color.png');
 }
 
@@ -286,7 +286,7 @@ body {
     background: url('../images/icons/sinatra.png');
 }
 
-.sinatra:hover {
+.hex:hover .middle .sinatra {
     background: url('../images/icons/sinatra-color.png');
 }
 
@@ -294,7 +294,7 @@ body {
     background: url('../images/icons/php.png');
 }
 
-.php:hover {
+.hex:hover .middle .php {
     background: url('../images/icons/php-color.png');
 }
 
@@ -302,7 +302,7 @@ body {
     background: url('../images/icons/ember.png');
 }
 
-.ember:hover {
+.hex:hover .middle .ember {
     background: url('../images/icons/ember-color.png');
 }
 
@@ -310,7 +310,7 @@ body {
     background: url('../images/icons/go.png');
 }
 
-.go:hover {
+.hex:hover .middle .go {
     background: url('../images/icons/go-color.png');
 }
 
@@ -318,7 +318,7 @@ body {
     background: url('../images/icons/node.png');
 }
 
-.node:hover {
+.hex:hover .middle .node {
     background: url('../images/icons/node-color.png');
 }
 
@@ -326,7 +326,7 @@ body {
     background: url('../images/icons/handlebars.png');
 }
 
-.handlebars:hover {
+.hex:hover .middle .handlebars {
     background: url('../images/icons/handlebars-color.png');
 }
 
@@ -334,7 +334,7 @@ body {
     background: url('../images/icons/postgres.png');
 }
 
-.postgres:hover {
+.hex:hover .middle .postgres {
     background: url('../images/icons/postgres-color.png');
 }
 
@@ -342,7 +342,7 @@ body {
     background: url('../images/icons/git.png');
 }
 
-.git:hover {
+.hex:hover .middle .git {
     background: url('../images/icons/git-color.png');
 }
 
@@ -350,7 +350,7 @@ body {
     background: url('../images/icons/redis.png');
 }
 
-.redis:hover {
+.hex:hover .middle .redis {
     background: url('../images/icons/redis-color.png');
 }
 
@@ -358,7 +358,7 @@ body {
     background: url('../images/icons/angular.png');
 }
 
-.angular:hover {
+.hex:hover .middle .angular {
     background: url('../images/icons/angular-color.png');
 }
 
@@ -366,7 +366,7 @@ body {
     background: url('../images/icons/clojure.png');
 }
 
-.clojure:hover {
+.hex:hover .middle .clojure {
     background: url('../images/icons/clojure-color.png');
 }
 
@@ -374,7 +374,7 @@ body {
     background: url('../images/icons/modernizr.png');
 }
 
-.modernizr:hover {
+.hex:hover .middle .modernizr {
     background: url('../images/icons/modernizr-color.png');
 }
 /**
@@ -591,6 +591,7 @@ body {
     font-size: 49px;
     padding-left: 5px;
     padding-bottom: 10px;
+    font-weight: bold;
 }
 
 .box-header {
@@ -634,6 +635,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 25px;
     padding-bottom: 5px;
+    font-weight: bold;    
 }
 
 #team-description {
@@ -678,18 +680,22 @@ body {
 
 #first-photo {
     background: url('max.jpeg');
+    background-size: 100%;
 }
 
 #second-photo {
     background: url('zach.jpeg');
+    background-size: 100%;
 }
 
 #third-photo {
     background: url('nikhil.jpeg');
+    background-size: 100%;
 }
 
 #fourth-photo {
     background: url('luke.jpeg');
+    background-size: 100%;
 }
 
 .member-info {
@@ -762,7 +768,7 @@ body {
     font-family: 'Open Sans', Arial, sans-serif;
     width: 35px;
     height: 35px;
-    background: url('social.png');
+    background-image: url('social.png');
 }
 
 .blog{

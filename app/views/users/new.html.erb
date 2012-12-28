@@ -1,204 +1,21 @@
 <div class="hexagons">
-	<div class="hex-row">
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle">
-				<div class="python"></div>
+		<% cache do %>
+		<% list = [%{python rails django ruby mongo compass angular}.split, %{git jquery javascript redis backbone html5 postgres modernizr}.split, %{sinatra php ember go node handlebars clojure}.split]
+
+	  list.each_with_index do |names, i| %>
+			<div class="hex-row <%= "even" if i%2 == 1 %>">
+				<% names.each do |name| %>
+					<div class="hex">
+						<div class="top"></div>
+						<div class="middle">
+							<div class="<%= name %>"></div>
+						</div>
+						<div class="bottom"></div>
+					</div>		
+				<% end %>			
 			</div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle"> 
-				<div class="rails"></div>
-			</div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle">
-				<div class="django"></div>
-			</div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle">
-				<div class="ruby"></div>
-			</div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle">
-				<div class="mongo"></div>
-			</div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle">
-				<div class="compass"></div>
-			</div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle">
-				<div class="angular"></div>
-			</div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle"></div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle"></div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle"></div>
-			<div class="bottom"></div>
-		</div>
-	</div>
-	<div class="hex-row even">
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle">
-				<div class="git"></div>
-			</div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle">
-				<div class="jquery"></div>
-			</div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle">
-				<div class="javascript"></div>
-			</div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle">
-				<div class="redis"></div>
-			</div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle">
-				<div class="backbone"></div>
-			</div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle">
-				<div class="html5"></div>
-			</div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle">
-				<div class="postgres"></div>
-			</div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle">
-				<div class="modernizr"></div>
-			</div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle"></div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle"></div>
-			<div class="bottom"></div>
-		</div>
-	</div>
-	<div class="hex-row">
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle">
-				<div class="sinatra"></div>
-			</div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle">
-				<div class="php"></div>
-			</div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle">
-				<div class="ember"></div>
-			</div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle">
-				<div class="go"></div>
-			</div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle">
-				<div class="node"></div>
-			</div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle">
-				<div class="handlebars"></div>
-			</div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle">
-				<div class="clojure"></div>
-			</div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle"></div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle"></div>
-			<div class="bottom"></div>
-		</div>
-		<div class="hex">
-			<div class="top"></div>
-			<div class="middle"></div>
-			<div class="bottom"></div>
-		</div>
-	</div>
+		<% end %>
+	<% end %>
 
 	<div id="email-container" class="email-form">
 		<h1>Changing the way that developers learn and teach.</h1>
@@ -213,7 +30,7 @@
 
 <div id="container">
 	<div id="nine-sixty-box-container">
-		<p id="about" class="oneliner"><span class="bold-oneliner">Backpack. </span>A marketplace for web development tutorials.</p><br>
+		<p id="about" class="oneliner"><span>Backpack.</span> A marketplace for web development tutorials.</p><br>
 	</div>
 	<div id="nine-sixty-box-container">
 		<div class="column" id="first">
@@ -240,7 +57,7 @@
 			<div class="team-photo" id="first-photo">
 				<div class="member-info">
 					<h3>Max Gillett</h3>
-					<p>Javascript ninja, Neuroscience at Vanderbilt, hates cheese.</p> 
+					<p>Full stack engineer, Neuroscience at Vanderbilt,  audiophile and music lover.</p> 
 					<div class="member-social">
 						<a class="github" href="http://github.com/maxgillett"></a>
 						<a class="blog" href="http://maxgillett.com"></a>
