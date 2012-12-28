@@ -205,7 +205,7 @@
 		<!-- <h2>Backpack.io</h2> -->
 		<%= form_for @user , html: { class: "email-form" }, remote: true do |f| %>
 		  <%= f.text_field :email, :placeholder => "Enter your email" %>
-		  <%= f.submit "Request Invite" %>
+		  <%= f.submit "Request Invite", disable_with: "Submitting..." %>
 		<% end %>
 		<p class="email-failure-message"></p>
 	</div>
