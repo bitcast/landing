@@ -1,4 +1,6 @@
 $(function(){
+	$('#share_buttons').hide();
+
 	$('input:submit').bind('click', function(){
 		//console.log('submitting');
 		$('input:submit').attr('value','Submitting...');
@@ -12,7 +14,8 @@ $(function(){
 		$('#user_email').remove();
 		$('input:submit').remove();
 		$('.email-failure-message').text('');
-		$('.email-form form').append('<p class="email-success-message">You are awesome. Scroll down to read more about Backpack.');
+		$('.email-form form').append('<p class="email-success-message">You are awesome. Please share Backpack with your friends:');
+		$('#share_buttons').show(); 
 	})
 	.bind('ajax:error', function(xhr, status, error){
 		//alert("error");
