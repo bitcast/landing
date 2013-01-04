@@ -697,6 +697,7 @@ body {
 #first-photo {
     background:  url('max.jpeg');
     background-size: 100%;
+    background-position: 0 -30px;
 }
 
 #second-photo {
