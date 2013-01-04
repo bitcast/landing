@@ -3,7 +3,7 @@ class UserMailer < ActionMailer::Base
 
   def welcome_email(user)
     @user = user
-    mail :subject => "Welcome to Bacpack!",
+    mail :subject => "Welcome to Backpack!",
          :to      => user.email
   end
 end
