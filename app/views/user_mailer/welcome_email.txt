@@ -1,7 +1,7 @@
-Thank you for signing up for a Backpack.io invitation!
+Thank you for signing up for a Bitcast.io invitation!
 ===================
 
-We'll send you an email at <%= @user.email %> as soon as we're up and running. Until then, please follow us on Twitter (@backpackdotio) or feel free to shoot us a message at info@backpack.io. 
+We'll send you an email at <%= @user.email %> as soon as we're up and running. Until then, please follow us on Twitter (@bitcastdotio) or feel free to shoot us a message at info@bitcast.io. 
 
 Cheers,
 
