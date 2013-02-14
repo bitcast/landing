@@ -14,7 +14,7 @@ $(function(){
 		$('#user_email').remove();
 		$('input:submit').remove();
 		$('.email-failure-message').text('');
-		$('.email-form form').append('<p class="email-success-message">You are awesome. Please share Backpack with your friends:');
+		$('.email-form form').append('<p class="email-success-message">You are awesome. Please share Bitcast with your friends:');
 		$('#share_buttons').show(); 
 	})
 	.bind('ajax:error', function(xhr, status, error){
