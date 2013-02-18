@@ -8,6 +8,7 @@ Launchpage::Application.configure do
     :password  => '4aa83707-e232-4f11-864a-9ccb8132fd41',
     :authentication => 'login' # Mandrill supports 'plain' or 'login'
   }
+
   # Code is not reloaded between requests
   config.cache_classes = true
 
@@ -16,7 +17,7 @@ Launchpage::Application.configure do
   config.action_controller.perform_caching = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this)
-  config.serve_static_assets = false
+  config.serve_static_assets = true
 
   # Compress JavaScripts and CSS
   config.assets.compress = true
@@ -71,4 +72,8 @@ Launchpage::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+
+  # Cache static assets
+  config.static_cache_control = "public, max-age=3600"
 end
+
